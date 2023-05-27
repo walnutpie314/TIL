@@ -1,0 +1,71 @@
+# 1. XR Toolkit 기본
+
+### **1.1 States**
+
+| Hover | - Interactable이 Interactor의 유효한 대상인 경우 해당 상태는 Hover로 변경
+- 개체 위로 마우스를 가져다 둔 상태. 동작X 시각적표시O |
+| --- | --- |
+| Select | - Interactable이 Select 상태에 있을 때 Interactor가 상호 작용
+- 버튼, 트리거 누르는 작업 시 작동
+- 물체 잡기, 레버 잡기, 문 열기 등등 |
+| Activate | - 더 많은 상호작용 ( 버튼이나 트리거에 추가 작업)
+- 총 쏘기, 손전등 켜기 등 |
+
+### 1.2 General setup
+
+1) Action-based
+
+-action 을 사용하여 하나 이상의 컨트롤의 입력을 간접적으로 읽음
+
+-프로젝트 진행 시 동작기반 사용하면 됨
+
+2) Device-based
+
+동작 자체에 구성된 특정 제어장치에서 직접 입력을 읽는데 사용
+
+# 2. **Controllers**
+
+### 2.1 **Configure XR Controller and Interactor**
+
+| Action | Required for |
+| --- | --- |
+| Position, Rotation, and Select | Basic interaction |
+| Tracking State | Knowing if Position and/or Rotation inputs are valid |
+| Activate | Activating a selected object |
+| UI Press | Interacting with UI canvas elements |
+| Haptic Device | Identifying the device to send haptic impulses to |
+| Rotate and Translate Anchor | Manipulating a selected object at a distance |
+
+### 2.2 설정
+
+![컨트롤러.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b219a99f-4c81-4d3c-9f70-2e15b17efff5/%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.png)
+
+# 3. **Locomotion**
+
+### 3.1 구성
+
+1) 사용자를 나타내는 XR 리그 , XR 리그의 접근을 제어
+
+2) 이동
+
+-Teleportation : 텔레포트 시스템
+
+-시간에 따른 연속 이동
+
+3) 회전
+
+-Snap Turn : 고정각도로 회전
+
+-시간에 따른 연속 회전
+
+4) 사용자 카운터를 컨트롤러 이동으로 이동시키는 Grab Move Provider
+
+5) 컨트롤러 이동에 따라 사용자 카운터를 이동, 회전 및 확장할 수 있는 양손 잡기 이동 제공자
+
+### 3.2  ****CONTINUOUS MOVEMENT****
+
+1) 설정
+
+-속도, 중력적용(즉시)
+
+-이동방향 : 메인 카메라 방향으로 설정 시 자연스러움
