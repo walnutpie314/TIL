@@ -1,5 +1,5 @@
-# TIL : Today I Learned
-## :smile: 
+# :smile: Today I Learned
+
 <br>
 공부한 내용을 기록합니다. 
 
