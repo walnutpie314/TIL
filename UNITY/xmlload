@@ -1,0 +1,42 @@
+xml url 을 유니티로 불러오기
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro; // 일단 url 불러오는데 필요는 없었으나, 내용에 한글이 포함되어있어서 일단 넣어놨음.. 
+using UnityEngine.Networking;
+using UnityEngine.EventSystems;
+using System.Xml;
+using System;
+using UnityEditor.PackageManager;
+
+public class Server : MonoBehaviour
+{
+
+    public void Start()
+    {
+        StartCoroutine(GetTimeTalble());
+    }
+
+    private IEnumerator GetTimeTalble()
+    {
+        string url = "http://www.djtc.kr/OpenAPI/service/TimeTableSVC/getAllTimeTable?ServiceKey=n2%2B5il86wvikkyHwmUT%2BklKL0SWx%2FRxoosZ7EiVgXmcILVoTfgnwRnB1g2t%2BBg46v6PTpEDoGtLojQgeOgCpGw%3D%3D";
+        UnityWebRequest www = UnityWebRequest.Get(url);
+        yield return www.SendWebRequest();
+
+        if (www.error != null) // 비어있다면 에러!
+        {
+            Debug.Log("error");
+            yield return www.error;
+        }
+        else // 아니라면 내용 보여주기
+        {
+            Debug.Log("OK!" + www.downloadHandler.text);
+            yield return www.downloadHandler;
+
+        }
+    }
+}
+
+
