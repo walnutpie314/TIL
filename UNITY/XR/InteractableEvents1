@@ -1,0 +1,18 @@
+# InteractableEvents #
+
+1. object를 선택하면 popup 창을 띄우고 싶다
+> Select Entered 
+  XR_UI Canvas : GameObject.SetActive 체크 활성화  = select 시 팝업 생성
+
+2. popup 창을 누르면 창이 꺼지도록 하고 싶다
+> button : On click > XR_UI Canvas : GameObject.SetActive 체크 비활성화
+
+-------------
+
+3. 해결해야 될 것
+> trigger
+  - 양 손의 grip 버튼을 이동에 사용하고 있음 > object 선택에는 trigger 버튼을 사용하고 싶음
+   시도) Activate가 trigger를 사용해서 Interactable events의 위 사항을 Activate 에 넣었는데 활성화가 되지 않음
+
+> 하나의 popup이 뜨면 popup 화의 버튼만 활성화되게 하고 싶음
+  
