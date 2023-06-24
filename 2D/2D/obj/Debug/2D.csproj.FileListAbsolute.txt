@@ -1,0 +1,11 @@
+C:\Users\16-6\source\repos\2D\2D\bin\Debug\2D.exe.config
+C:\Users\16-6\source\repos\2D\2D\bin\Debug\2D.exe
+C:\Users\16-6\source\repos\2D\2D\bin\Debug\2D.pdb
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\2D.csproj.AssemblyReference.cache
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\2D.csproj.SuggestedBindingRedirects.cache
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\_2D.Form1.resources
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\_2D.Properties.Resources.resources
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\2D.csproj.GenerateResource.cache
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\2D.csproj.CoreCompileInputs.cache
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\2D.exe
+C:\Users\16-6\source\repos\2D\2D\obj\Debug\2D.pdb
