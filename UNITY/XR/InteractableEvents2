@@ -1,0 +1,15 @@
+InteractableEvents2
+
+DD 팝업
+
+문제점
+1. WordSpace 로 제작하여 popup 화면이 물체를 따라다니는 문제 
+2. trigger 문제
+
+해결
+1. Screen Space - Camera 로 변경
+  1) Plane Distance 의 수치를 줄여 레이에 닿을때까지 가까이 위치시킴
+  2) Canvas Scaler - Scale Factor 의 수치를 변경하여 화면에 보이는 popup 크기 조절 
+2. XR Defaul Input Action 에서 변경하면 됨
+  1) 기존 움직임 구현에 select 사용 + popup 구현에도 select 사용.
+  2) UI 선택을 select 로 바꾸는게 나을 듯 > trigger 사용 X grip 사용 O
